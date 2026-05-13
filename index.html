@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon.png"
+    />
+    <title>Portfólio | Emilly Miller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600;700&family=DM+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .timeline__company-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 4px;
+      }
+
+      .timeline__logo {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <nav class="navbar">
+        <!-- Mobile: brand left -->
+        <div class="nav__brand">
+          <img
+            class="nav__logo-icon"
+            src="assets/img/favicon.png"
+            alt="EM Logo"
+          />
+        </div>
+
+        <!-- Desktop: left links -->
+        <div class="nav__group nav__group--left">
+          <button class="nav__item nav__item--active">Início</button>
+          <a class="nav__item" href="#trajetoria">Trajetória</a>
+          <a class="nav__item" href="#contratar">Sobre</a>
+        </div>
+
+        <!-- Desktop: centre logo -->
+        <div class="nav__group nav__group--center">
+          <img
+            class="nav__logo-icon"
+            src="assets/img/favicon.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+
+        <!-- Desktop: right links -->
+        <div class="nav__group nav__group--right">
+          <a
+            class="nav__item"
+            href="https://drive.google.com/file/d/1MdtgVduLbMjeR3vsEEKeeLclZPpxZTEN/view?usp=sharing"
+            >Currículo</a
+          >
+          <a class="nav__item" href="#servicesCarousel">Projetos</a>
+          <a class="nav__item" href="#contato">Contato</a>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <!-- Mobile drawer -->
+      <div class="nav__drawer" id="drawer" aria-hidden="true">
+        <button class="nav__item nav__item--active">Início</button>
+        <a class="nav__item" href="#trajetoria">Trajetória</a>
+        <a class="nav__item" href="#contratar">Sobre</a>
+        <a
+          class="nav__item"
+          href="#https://drive.google.com/file/d/1MdtgVduLbMjeR3vsEEKeeLclZPpxZTEN/view?usp=sharing"
+          >Currículo</a
+        >
+        <a class="nav__item" href="#servicesCarousel">Projetos</a>
+        <a class="nav__item" href="#contato">Contato</a>
+      </div>
+
+      <!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+      <section class="hero">
+        <!-- Headline (above photo) -->
+        <div class="hero__headline">
+          <div class="hero__hello-wrap">
+            <span class="hero__hello-badge">HELLO!</span>
+            <img
+              class="hero__hello-arrow"
+              src="assets/img/vector.png"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <h1 class="hero__title">
+            Eu me chamo <span class="hero__title--accent">Emilly,</span><br />
+            Dev Front-end
+          </h1>
+        </div>
+
+        <!-- Left testimonial (desktop/tablet) -->
+        <aside class="hero__testimonial" aria-label="Testimonial">
+          <img
+            class="hero__quote-icon"
+            src="assets/img/quote-up.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <p class="hero__testimonial-text">
+            Transformo designs complexos<br />
+            do Figma em código de alta<br />
+            qualidade e performance.
+          </p>
+        </aside>
+
+        <!-- Right experience (desktop/tablet) -->
+        <aside class="hero__experience" aria-label="Experience">
+          <div class="hero__stars" aria-label="5 stars">
+            <img src="assets/img/star.png" alt="5 estrelas" />
+          </div>
+          <p class="hero__years">10 Meses</p>
+          <p class="hero__exp-label">de Experiência</p>
+        </aside>
+
+        <!-- Photo + circle + CTA -->
+        <div class="hero__photo-wrap">
+          <div class="hero__circle"></div>
+          <img
+            class="hero__photo"
+            src="assets/img/teste.svg"
+            alt="Emilly Miller, Front-end Developer"
+          />
+          <div class="hero__cta-pill">
+            <button class="hero__cta-primary">
+              Portifólio
+              <svg
+                class="hero__cta-arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 14L14 4M14 4H6M14 4V12"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <a href="#contato" class="hero__cta-secondary">Contato</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="services">
+      <!-- Imagem de fundo -->
+      <img
+        class="services__bg"
+        src="assets/img/bg_sobre.png"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <div class="services__inner">
+        <!-- Cabeçalho -->
+        <header class="services__header">
+          <h2 class="services__title">
+            Alguns <span class="services__title--accent">Projetos</span>
+          </h2>
+          <p class="services__desc">
+            Desenvolvimento de interfaces modernas, responsivas e com foco
+            absoluto em otimização e refatoração de páginas para garantir a
+            melhor performance.
+          </p>
+        </header>
+
+        <!-- Carrossel -->
+        <div class="services__carousel" id="servicesCarousel">
+          <!--
+      <button class="services__nav services__nav--prev" id="servicesPrev" aria-label="Previous projects">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <button class="services__nav services__nav--next" id="servicesNext" aria-label="Next projects">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>-->
+
+          <!-- Track (parte que desliza) -->
+          <div class="services__viewport">
+            <div class="services__track" id="servicesTrack">
+              <a
+                class="service-card"
+                href="https://anajuliaramalhoarq.netlify.app/"
+              >
+                <span class="service-card__title">Portifólio Arquiteta</span>
+                <div class="service-card__media">
+                  <img
+                    src="assets/img/portifolio.png"
+                    alt="Desenvolvimento React project"
+                  />
+                </div>
+              </a>
+
+              <a class="service-card" href="https://glucooff.com/">
+                <span class="service-card__title">Landing Pages</span>
+                <div class="service-card__media">
+                  <img
+                    src="assets/img/glucooff.png"
+                    alt="Landing Pages project"
+                  />
+                </div>
+              </a>
+
+              <a class="service-card" href="https://imobilar.netlify.app/">
+                <span class="service-card__title">Imobiliaria em React</span>
+                <div class="service-card__media">
+                  <img
+                    src="assets/img/imobilar.png"
+                    alt="Otimização Web project"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="services__dots"
+          id="servicesDots"
+          aria-label="Carousel pagination"
+        ></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="trajetoria">
+      <div class="experience__inner">
+        <!-- Título -->
+        <h2 class="experience__title">
+          Minha <span class="experience__title--accent">Trajetória</span>
+        </h2>
+
+        <!-- Timeline -->
+        <div class="timeline">
+          <!-- Item 1: XMX-Corp -->
+          <article class="timeline__item">
+            <div class="timeline__left">
+              <div class="timeline__company-wrap">
+                <img
+                  class="timeline__logo"
+                  src="assets/img/logo.jpeg"
+                  alt="Logo XMX-Corp"
+                />
+                <h3 class="timeline__company">XMX-Corp</h3>
+              </div>
+              <p class="timeline__period">10 de Julho de 2025 - Presente</p>
+            </div>
+
+            <div
+              class="timeline__dot timeline__dot--orange"
+              aria-hidden="true"
+            ></div>
+
+            <div class="timeline__right">
+              <h3 class="timeline__role">Dev Front-end Junior 🇺🇸</h3>
+              <p class="timeline__desc">
+                Desenvolvimento com React.js, SCSS e HTML com fidelidade de 100%
+                ao Figma. Otimização técnica de Landing Pages para tráfego pago
+                (Core Web Vitals). Ótima em resolver conflitos e lidar com
+                ambientes de alta demanda.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 2: Ministério Público do RN -->
+          <article class="timeline__item">
+            <div class="timeline__left">
+              <div class="timeline__company-wrap">
+                <img
+                  class="timeline__logo"
+                  src="assets/img/mp-rn.png"
+                  alt="Logo MPRN"
+                />
+                <h3 class="timeline__company">Ministério Público do RN</h3>
+              </div>
+              <p class="timeline__period">
+                02 de Jun de 2025 - 07 de Jul de 2025
+              </p>
+            </div>
+
+            <div
+              class="timeline__dot timeline__dot--dark"
+              aria-hidden="true"
+            ></div>
+
+            <div class="timeline__right">
+              <h3 class="timeline__role">Estagiária</h3>
+              <p class="timeline__desc">
+                Atuação no setor de tecnologia da informação do Ministério
+                Público do Rio Grande do Norte (MPRN), auxiliando nas demandas
+                técnicas, suporte e acompanhamento de processos internos do
+                órgão.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 3: UFRN -->
+          <article class="timeline__item">
+            <div class="timeline__left">
+              <div class="timeline__company-wrap">
+                <img
+                  class="timeline__logo"
+                  src="assets/img/ufrn.png"
+                  alt="Logo UFRN"
+                />
+                <h3 class="timeline__company">UFRN</h3>
+              </div>
+              <p class="timeline__period">2023 - Em andamento</p>
+            </div>
+
+            <div
+              class="timeline__dot timeline__dot--orange"
+              aria-hidden="true"
+            ></div>
+
+            <div class="timeline__right">
+              <h3 class="timeline__role">Bacharelado em TI</h3>
+              <p class="timeline__desc">
+                Formação acadêmica focada em Tecnologia da Informação. Além do
+                desenvolvimento de habilidades técnicas sólidas, atuei como
+                Vice-Presidente do Diretório Acadêmico do curso, aprimorando
+                forte capacidade de liderança, organização e comunicação
+                assertiva.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hire">
+      <div class="hire__card">
+        <div class="hire__photo-wrap">
+          <div class="hire__blob" aria-hidden="true"></div>
+          <img
+            class="hire__photo"
+            src="assets/img/teste.svg"
+            alt="Emilly, Front-end Developer"
+          />
+        </div>
+
+        <div class="hire__content" id="contratar">
+          <h2 class="hire__title">
+            Sobre <span class="hire__title--accent">mim</span>!
+          </h2>
+
+          <p class="hire__desc">
+            Sou Desenvolvedora Front-End com foco em criar experiências fluidas
+            e eficientes. Acredito que a excelência está nos detalhes e no
+            trabalho colaborativo, por isso estou sempre em busca de novos
+            desafios que me permitam evoluir e trocar conhecimentos com o time.
+          </p>
+
+          <!-- Stats -->
+          <div class="hire__stats">
+            <div class="hire__stat">
+              <span class="hire__stat-number">10</span>
+              <span class="hire__stat-label">Meses de Experiência</span>
+            </div>
+            <div class="hire__stat">
+              <span class="hire__stat-number">90+</span>
+              <span class="hire__stat-label">Score no PageSpeed</span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <a class="hire__cta" href="#contato">Fale Comigo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════ CONTACT ══════════════════════════════ -->
+    <section class="contact" id="contato">
+      <div class="contact__inner">
+        <!-- Cabeçalho -->
+        <header class="contact__header">
+          <h2 class="contact__title">
+            Entre em <span class="contact__title--accent">Contato</span>
+          </h2>
+          <p class="contact__desc">
+            Vamos conversar sobre o seu próximo projeto. Me encontre em qualquer
+            uma dessas redes.
+          </p>
+        </header>
+
+        <!-- Grid de redes -->
+        <div class="contact__grid">
+          <!-- Email -->
+          <a
+            class="contact-card"
+            href="mailto:milleremilly5@gmail.com"
+            aria-label="Send email"
+          >
+            <div class="contact-card__icon">
+              <img src="assets/img/email.png" alt="" />
+            </div>
+            <div class="contact-card__info">
+              <span class="contact-card__label">Email</span>
+              <span class="contact-card__handle">milleremilly5@gmail.com</span>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            class="contact-card"
+            href="https://www.linkedin.com/in/emilly-miller-8b624a303/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open LinkedIn"
+          >
+            <div class="contact-card__icon">
+              <img src="assets/img/linkedin.png" alt="" />
+            </div>
+            <div class="contact-card__info">
+              <span class="contact-card__label">LinkedIn</span>
+              <span class="contact-card__handle"
+                >/in/emilly-miller-8b624a303</span
+              >
+            </div>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            class="contact-card"
+            href="https://www.instagram.com/emillymilleer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Instagram"
+          >
+            <div class="contact-card__icon">
+              <img src="assets/img/insta.png" alt="" />
+            </div>
+            <div class="contact-card__info">
+              <span class="contact-card__label">Instagram</span>
+              <span class="contact-card__handle">@emillymilleer</span>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            class="contact-card"
+            href="https://github.com/emmily5"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open GitHub"
+          >
+            <div class="contact-card__icon">
+              <img src="assets/img/github.png" alt="" />
+            </div>
+            <div class="contact-card__info">
+              <span class="contact-card__label">GitHub</span>
+              <span class="contact-card__handle">/emmily5</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
